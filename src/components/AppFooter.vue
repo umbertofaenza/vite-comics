@@ -39,17 +39,7 @@ export default {
           current: false,
         },
         {
-          text: "fans",
-          href: "#",
-          current: false,
-        },
-        {
           text: "news",
-          href: "#",
-          current: false,
-        },
-        {
-          text: "shop",
           href: "#",
           current: false,
         },
