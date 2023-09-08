@@ -61,12 +61,26 @@ export default {
 
 <template>
   <header>
-    <div class="top-navbar">
-      <div class="logo">LOGO</div>
-      <div class="top-navbar__menu">
-        <ul>
-          <li v-for="link in topMenuLinks">{{ link.text }}</li>
-        </ul>
+    <div class="container">
+      <!-- top navbar -->
+      <div class="top-navbar">
+        <!-- logo -->
+        <div class="logo">
+          <img src="../assets/img/dc-logo.png" alt="DC Logo" />
+        </div>
+        <!-- menu -->
+        <div class="top-navbar__menu">
+          <ul>
+            <li
+              v-for="link in topMenuLinks"
+              :class="link.current ? 'active' : ''"
+            >
+              <a :href="link.href">
+                {{ link.text }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>

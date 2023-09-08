@@ -1,0 +1,55 @@
+// #RESET
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  max-width: 100%;
+}
+
+// #GENERALS
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+// #SECTIONS
+
+header {
+  .top-navbar {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        height: 150px;
+        margin: 0 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+
+        &.active {
+          box-shadow: inset 0px -5px 0px 0px #0282f9;
+          color: #0282f9;
+        }
+      }
+    }
+  }
+}
