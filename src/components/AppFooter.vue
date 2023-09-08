@@ -118,27 +118,27 @@ export default {
 
       sitesList: [
         {
-          text: "Shop DC",
+          text: "DC",
           href: "#",
           current: false,
         },
         {
-          text: "Shop DC Collectibles",
+          text: "MAD Magazine",
           href: "#",
           current: false,
         },
         {
-          text: "Shop DC",
+          text: "DC Kids",
           href: "#",
           current: false,
         },
         {
-          text: "Shop DC Collectibles",
+          text: "DC Universe",
           href: "#",
           current: false,
         },
         {
-          text: "Shop DC",
+          text: "DC Power Visa",
           href: "#",
           current: false,
         },
