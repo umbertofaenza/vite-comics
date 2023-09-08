@@ -79,8 +79,11 @@ main {
 
 footer {
   .footer-top {
-    background-image: url(/src/assets/img/footer-bg.jpg);
-    background-size: cover;
+    background-image: url(/src/assets/img/dc-logo-bg.png),
+      url(/src/assets/img/footer-bg.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 77%, top left;
+    background-size: 25%, cover;
 
     .list-wrappers {
       display: flex;
