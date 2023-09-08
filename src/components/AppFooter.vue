@@ -156,45 +156,57 @@ export default {
 <template>
   <footer>
     <div class="container">
-      <!-- list wrappers -->
-      <div class="list-wrappers">
-        <!-- left -->
-        <div class="list-wrapper__left">
-          <!-- dc comics list -->
-          <ul>
-            DC COMICS
-            <li v-for="link in dcComicsList">
-              {{ link.text }}
-            </li>
-          </ul>
+      <!-- footer top -->
+      <div class="footer-top">
+        <!-- list wrappers -->
+        <div class="list-wrappers">
+          <!-- left -->
+          <div class="list-wrapper__left">
+            <!-- dc comics list -->
+            <ul>
+              <span class="ul-title">DC COMICS</span>
+              <li v-for="link in dcComicsList">
+                <a :href="link.href">
+                  {{ link.text }}
+                </a>
+              </li>
+            </ul>
 
-          <!-- shop list -->
-          <ul>
-            SHOP
-            <li v-for="link in shopList">
-              {{ link.text }}
-            </li>
-          </ul>
-        </div>
-        <!-- center -->
-        <div class="list-wrapper__center">
-          <!-- dc list -->
-          <ul>
-            DC
-            <li v-for="link in dcList">
-              {{ link.text }}
-            </li>
-          </ul>
-        </div>
-        <!-- right -->
-        <div class="list-wrapper__right">
-          <!-- sites list -->
-          <ul>
-            SITES
-            <li v-for="link in sitesList">
-              {{ link.text }}
-            </li>
-          </ul>
+            <!-- shop list -->
+            <ul>
+              <span class="ul-title">SHOP</span>
+              <li v-for="link in shopList">
+                <a :href="link.href">
+                  {{ link.text }}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- center -->
+          <div class="list-wrapper__center">
+            <!-- dc list -->
+            <ul>
+              <span class="ul-title">DC</span>
+              <li v-for="link in dcList">
+                <a :href="link.href">
+                  {{ link.text }}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- right -->
+          <div class="list-wrapper__right">
+            <!-- sites list -->
+            <ul>
+              <span class="ul-title">SITES</span>
+
+              <li v-for="link in sitesList">
+                <a :href="link.href">
+                  {{ link.text }}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
