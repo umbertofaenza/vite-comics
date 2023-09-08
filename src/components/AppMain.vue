@@ -1,7 +1,11 @@
 <script></script>
 
 <template>
-  <h2>Main</h2>
+  <main>
+    <div class="container">
+      <h2>Content goes here</h2>
+    </div>
+  </main>
 </template>
 
 <style scoped></style>
