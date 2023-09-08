@@ -59,6 +59,17 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <header>
+    <div class="top-navbar">
+      <div class="logo">LOGO</div>
+      <div class="top-navbar__menu">
+        <ul>
+          <li v-for="link in topMenuLinks">{{ link.text }}</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</template>
 
 <style scoped></style>
