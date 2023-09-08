@@ -60,52 +60,57 @@ export default {
 
       dcList: [
         {
-          text: "characters",
+          text: "Terms of use",
           href: "#",
           current: false,
         },
         {
-          text: "comics",
+          text: "Privacy policy (New)",
           href: "#",
           current: false,
         },
         {
-          text: "movies",
+          text: "Ad Choices",
           href: "#",
           current: false,
         },
         {
-          text: "tv",
+          text: "Advertising",
           href: "#",
           current: false,
         },
         {
-          text: "games",
+          text: "Jobs",
           href: "#",
           current: false,
         },
         {
-          text: "collectibles",
+          text: "Subscriptions",
           href: "#",
           current: false,
         },
         {
-          text: "videos",
+          text: "Talent Workshops",
           href: "#",
           current: false,
         },
         {
-          text: "fans",
+          text: "CPSC Certificates",
           href: "#",
           current: false,
         },
         {
-          text: "news",
+          text: "Ratings",
           href: "#",
           current: false,
         },
         {
-          text: "shop",
+          text: "Shop Help",
+          href: "#",
+          current: false,
+        },
+        {
+          text: "Contact Us",
           href: "#",
           current: false,
         },
