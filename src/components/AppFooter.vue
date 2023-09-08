@@ -155,9 +155,9 @@ export default {
 
 <template>
   <footer>
-    <div class="container">
-      <!-- footer top -->
-      <div class="footer-top">
+    <!-- footer top -->
+    <div class="footer-top">
+      <div class="container">
         <!-- list wrappers -->
         <div class="list-wrappers">
           <!-- left -->
@@ -207,6 +207,20 @@ export default {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <!-- footer bottom left -->
+        <div class="footer-bottom__left">
+          <div class="sign-up-btn">SIGN-UP NOW!</div>
+        </div>
+        <!-- footer bottom right -->
+        <div class="footer-bottom__right">
+          <div class="socials">FOLLOW US</div>
         </div>
       </div>
     </div>
