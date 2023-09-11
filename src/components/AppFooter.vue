@@ -215,7 +215,25 @@ export default {
         </div>
         <!-- footer bottom right -->
         <div class="footer-bottom__right">
-          <div class="socials">FOLLOW US</div>
+          <div class="socials">
+            <span>FOLLOW US</span>
+            <div class="icons">
+              <font-awesome-icon
+                icon="fa-brands fa-facebook-f"
+                class="fa-icon"
+              />
+              <font-awesome-icon icon="fa-brands fa-twitter" class="fa-icon" />
+              <font-awesome-icon icon="fa-brands fa-youtube" class="fa-icon" />
+              <font-awesome-icon
+                icon="fa-brands fa-pinterest"
+                class="fa-icon"
+              />
+              <font-awesome-icon
+                icon="fa-brands fa-periscope"
+                class="fa-icon"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -290,9 +308,25 @@ export default {
 
   .footer-bottom__right {
     .socials {
-      color: #0282f9;
-      font-weight: bold;
-      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        color: #0282f9;
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-right: 15px;
+      }
+
+      .fa-icon {
+        font-size: 1.3rem;
+        color: #303030;
+        background-color: #797979;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 50%;
+        aspect-ratio: 1;
+      }
     }
   }
 }
