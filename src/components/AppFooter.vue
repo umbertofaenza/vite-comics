@@ -222,4 +222,78 @@ export default {
   </footer>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+// footer top
+.footer-top {
+  background-image: url(/src/assets/img/dc-logo-bg.png),
+    url(/src/assets/img/footer-bg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 77%, top left;
+  background-size: 25%, cover;
+
+  .list-wrappers {
+    display: flex;
+    padding: 30px 0;
+
+    ul {
+      .ul-title {
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+      }
+
+      li {
+        color: grey;
+        text-transform: capitalize;
+        font-size: 0.85rem;
+        padding: 3px 0;
+      }
+    }
+
+    .list-wrapper__left,
+    .list-wrapper__center,
+    .list-wrapper__right {
+      margin-right: 50px;
+    }
+
+    .list-wrapper__left {
+      ul:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// footer bottom
+.footer-bottom {
+  height: 150px;
+  background-color: #303030;
+  display: flex;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom__left {
+    .sign-up-btn {
+      color: white;
+      font-weight: bold;
+      font-size: 1.15rem;
+      border: 2px solid #0282f9;
+      padding: 15px;
+    }
+  }
+
+  .footer-bottom__right {
+    .socials {
+      color: #0282f9;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
+}
+</style>

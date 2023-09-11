@@ -8,4 +8,17 @@
   </main>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 150px;
+  background-color: #1c1c1c;
+
+  h2 {
+    color: #fff;
+  }
+}
+</style>

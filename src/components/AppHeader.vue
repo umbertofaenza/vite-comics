@@ -86,4 +86,32 @@ export default {
   </header>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.top-navbar {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    li {
+      height: 150px;
+      margin: 0 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8rem;
+      color: #464646;
+
+      display: flex;
+      align-items: center;
+
+      &.active {
+        box-shadow: inset 0px -5px 0px 0px #0282f9;
+        color: #0282f9;
+      }
+    }
+  }
+}
+</style>
