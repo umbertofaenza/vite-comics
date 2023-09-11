@@ -21,7 +21,7 @@ export default [
   },
   {
     text: "DC Power Visa",
-    iconPath: "img/buy-dc-power-visa.svg",
+    iconPath: "img/buy-comics-subscriptions.png",
     href: "#",
   },
 ];
