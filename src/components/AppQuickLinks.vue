@@ -1,11 +1,7 @@
 <script>
-import quickLinks from "../data/quick-links.js";
-
 export default {
-  data() {
-    return {
-      quickLinks,
-    };
+  props: {
+    quickLinks: Array,
   },
 };
 </script>

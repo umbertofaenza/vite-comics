@@ -1,14 +1,10 @@
 <script>
-import dcComics from "../data/dc-comics.js";
 import AppCard from "./AppCard.vue";
 
 export default {
-  data() {
-    return {
-      dcComics,
-    };
+  props: {
+    dcComics: Array,
   },
-
   components: { AppCard },
 };
 </script>
