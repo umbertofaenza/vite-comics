@@ -31,6 +31,8 @@ export default {
             <!-- text -->
             <div class="card-text">{{ comic.series }}</div>
           </div>
+          <!-- laod more button -->
+          <div class="load-more-btn">Load more</div>
         </div>
       </section>
     </div>
@@ -63,6 +65,7 @@ main {
       .comic-card {
         width: calc(100% / 6 - 30px);
         margin: 25px 15px;
+        cursor: pointer;
 
         .card-media img {
           width: 100%;
@@ -77,6 +80,18 @@ main {
           color: #fff;
           text-transform: uppercase;
         }
+      }
+
+      .load-more-btn {
+        display: inline-block;
+        background-color: #0282f9;
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 45px;
+        margin: 20px auto;
+        cursor: pointer;
       }
     }
   }
