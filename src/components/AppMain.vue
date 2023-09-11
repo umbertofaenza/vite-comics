@@ -1,5 +1,6 @@
 <script>
 import dcComics from "../data/dc-comics.js";
+import AppCard from "./AppCard.vue";
 
 export default {
   data() {
@@ -7,6 +8,8 @@ export default {
       dcComics,
     };
   },
+
+  components: { AppCard },
 };
 </script>
 
@@ -23,14 +26,11 @@ export default {
         <!-- comics wrapper -->
         <div class="comics-wrapper">
           <!-- comics cards -->
-          <div v-for="comic in dcComics" class="comic-card">
-            <!-- media -->
-            <div class="card-media">
-              <img :src="comic.thumb" />
-            </div>
-            <!-- text -->
-            <div class="card-text">{{ comic.series }}</div>
-          </div>
+          <AppCard
+            v-for="comic in dcComics"
+            :key="comic.series"
+            :comic="comic"
+          />
           <!-- laod more button -->
           <div class="load-more-btn">Load more</div>
         </div>
@@ -61,26 +61,6 @@ main {
     .comics-wrapper {
       display: flex;
       flex-wrap: wrap;
-
-      .comic-card {
-        width: calc(100% / 6 - 30px);
-        margin: 25px 15px;
-        cursor: pointer;
-
-        .card-media img {
-          width: 100%;
-          aspect-ratio: 1;
-          object-fit: cover;
-          object-position: top;
-          margin-bottom: 10px;
-        }
-
-        .card-text {
-          font-size: 0.9rem;
-          color: #fff;
-          text-transform: uppercase;
-        }
-      }
 
       .load-more-btn {
         display: inline-block;
