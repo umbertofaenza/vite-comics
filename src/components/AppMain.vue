@@ -1,4 +1,14 @@
-<script></script>
+<script>
+import dcComics from "../data/dc-comics.js";
+
+export default {
+  data() {
+    return {
+      dcComics,
+    };
+  },
+};
+</script>
 
 <template>
   <main>
@@ -8,8 +18,20 @@
     <div class="container">
       <!-- comics -->
       <section class="comics">
+        <!-- title -->
         <h1>Current Series</h1>
-        <div class="comics-wrapper"></div>
+        <!-- comics wrapper -->
+        <div class="comics-wrapper">
+          <!-- comics cards -->
+          <div v-for="comic in dcComics" class="comic-card">
+            <!-- media -->
+            <div class="card-media">
+              <img :src="comic.thumb" />
+            </div>
+            <!-- text -->
+            <div class="card-text">{{ comic.series }}</div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
@@ -32,6 +54,30 @@ main {
       color: #fff;
       text-transform: uppercase;
       padding: 15px 30px;
+    }
+
+    .comics-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      .comic-card {
+        width: calc(100% / 6 - 30px);
+        margin: 25px 15px;
+
+        .card-media img {
+          width: 100%;
+          aspect-ratio: 1;
+          object-fit: cover;
+          object-position: top;
+          margin-bottom: 10px;
+        }
+
+        .card-text {
+          font-size: 0.9rem;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }
