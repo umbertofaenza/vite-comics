@@ -44,7 +44,7 @@ export default {
       cursor: pointer;
 
       .link-media img {
-        width: 50px;
+        height: 50px;
         margin-right: 15px;
       }
 
