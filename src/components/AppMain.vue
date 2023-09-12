@@ -42,6 +42,7 @@ main {
   .jumbotron {
     height: 400px;
     background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
     margin-bottom: -30px;
   }
 
